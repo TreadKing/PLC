@@ -1,0 +1,15 @@
+*.txt
+*.doc
+*.docx
+*.pdf
+*
+!*.*
+!*/
+!*.c
+!*.cpp
+!Makefile
+settings.json
+hw5.1
+hw5.2
+hw5.3
+tempCodeRunnerFile.*
