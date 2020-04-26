@@ -28,13 +28,13 @@ int main()
 
     int userInput, choice, convertedValue;
 
-    cout << "----------------------------------" << endl;
+    cout << "******************************************************************************" << endl;
 
-    cout << "Please enter the choice : " << endl;
+    cout << "What do you want to do today?" << endl;
 
-    cout << "Enter " << Celsius << " -- convert from Celsius to Fahrenheit" << endl;
+    cout << "Convert to Fahrenheight Press -> " << Celsius << " <- and press enter" << endl;
 
-    cout << "Enter " << Fahrenheit << " -- convert from Fahrenheit to Celsius" << endl;
+    cout << "Convert to Celsius Press -> " << Fahrenheit << " <- and press enter" << endl;
 
     cout << "Choice :";
 
@@ -46,13 +46,13 @@ int main()
 
     case Celsius:
 
-      cout << "Please enter the Celsius value : ";
+      cout << "Enter your celcius value: ";
 
       cin >> userInput;
 
       convertedValue = (userInput * 9 / 5) + 32;
 
-      cout << "Fahrenheit is " << convertedValue << endl;
+      cout << "Fahrenheit: " << convertedValue << endl;
 
       TempLevel(userInput);
 
@@ -92,13 +92,13 @@ void TempLevel(int convertedValue)
 
   string result;
 
-  convertedValue <= Low ? result = "Temperature is cold" : "";
+  convertedValue <= Low ? result = "That is cold OwO" : "";
 
-  convertedValue > Low && convertedValue <= Medium ? result = "Temperature is comfort" : "";
+  convertedValue > Low && convertedValue <= Medium ? result = "That is comfy uwu " : "";
 
-  convertedValue > Medium && convertedValue <= High ? result = "Temperature is hot" : "";
+  convertedValue > Medium && convertedValue <= High ? result = "That is hot >w<" : "";
 
-  convertedValue > High ? result = "Temperature is very hot" : "";
+  convertedValue > High ? result = "That is very hot ✧w✧" : "";
 
   cout << result << endl;
 
