@@ -1,0 +1,15 @@
+j = -3
+i = 0
+loop: if i < 3 == 0 goto out
+if j + 2 == 3 goto case1
+if j + 2 == 2 goto case1
+if j + 2 == 0 goto case2
+j = 0
+check: if j > 0 goto outj = 3 -1
+i++
+goto loop
+cas1: j--
+goto check
+case2: j -=2
+goto check
+out:
