@@ -57,11 +57,11 @@ public class Final_1 {
     }
 
     private static boolean validFloat(String input){
-        String floatRegex = "^[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?f$";
+        String floatRegex = "[+-]?([0-9]*[.])?[0-9]+[fFlL]?[+]?[eE]?[0-9]*";
         if(input.matches(floatRegex))
             return true;
         else
             return false;
     }
-    
+
 }
