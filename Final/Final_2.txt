@@ -1,0 +1,9 @@
+<assign> -> <id> = <expr>
+<id> -> A | B | C
+<expr> -> <expr> + <term> | <term>
+<term> -> <term> * <factor> | <factor>
+<factor> -> (<expr>) | <id> | <id>++ | <id>--
+<Boolean_expr> -> <boolean_expression> || <Boolean_term> | <Boolean_term>
+<Boolean_term> -> <boolean_term> && <boolean_factor> | <Bollean_factor>
+<boolean_factor> -> id| !<boolean_factor | (<Boolean_expr) | <relation_expr>
+<relation_expr> -> id == id | id != od | id < id | id <= id | id >= id | id > id | id
